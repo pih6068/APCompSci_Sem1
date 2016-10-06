@@ -8,11 +8,11 @@ public class Lesson_02
 		int product = var1 * var2;
 		System.out.println(var1 + " multiplied by " + var2 + " is " + product);
 		//Concatenation
-		String name = "Cody Lin";
+		String name = "Mr. Robinette";
 		String address = "3710 Del Mar Heights Road";
 		String city = "San Diego, ";
 		String zip = "92130";
-		System.out.println(name + "\n" + address + "\n" + city + zip);
+		System.out.println(name + "\n" + address + "\n" + city + "CA " + zip);
 		//Complex Calculation
 		int length = 8;
 		int width = 3;
