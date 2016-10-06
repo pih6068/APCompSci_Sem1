@@ -6,16 +6,17 @@ public class rectangle
 	{
 		Scanner kb = new Scanner(System.in);
 		
-		System.out.println("Please enter the length and width in feet");
+		System.out.println("Enter the length in feet");
 		length = kb.nextDouble();
 		kb.nextLine();
+
+		System.out.println("Enter width in feet");
 		width  = kb.nextDouble();
 		kb.nextLine();
 		print();
-		
 	}
 	
-	public static double calcPerim()
+	public static double perim()
 	{
 		double perimeter  = (2*length)+(2*width);
 		return perimeter;
@@ -23,6 +24,6 @@ public class rectangle
 	
 	public static void print()
 	{
-		System.out.println("Your rectangle is " + calcPerim() + " ft around");
+		System.out.println("Your rectangle is " + perim() + " ft around");
 	}
 }

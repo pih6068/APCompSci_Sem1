@@ -6,19 +6,19 @@ public class cube
 	{
 		Scanner kb = new Scanner(System.in);
 		
-		System.out.println("Please enter the side length");
+		System.out.println("Enter the side length");
 		side = kb.nextDouble();
 		kb.nextLine();
 		print();
 	}
 	
-	public static double calcSurf()
+	public static double surfarea()
 	{
-		return (side*side*6);
+		return (side*side)*6;
 	}
 	
 	public static void print()
 	{
-		System.out.println("The surface area of a cube with side length " + side + " is " + calcSurf());
+		System.out.println("The surface area of a cube whose sides are " + side + " in length is " + surfarea());
 	}
 }

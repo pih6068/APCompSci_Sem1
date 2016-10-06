@@ -7,36 +7,32 @@ public class compoundinterest
 		compoundinterest interest = new compoundinterest();
 		
 		System.out.println("Please enter the interest rate");
-		double r = kb.nextDouble();
+		double rate = kb.nextDouble();
 		kb.nextLine();
 		
 		System.out.println("Please enter the principal amount");
-		double p = kb.nextDouble();
+		double principal = kb.nextDouble();
 		kb.nextLine();
 		
 		System.out.println("Please enter the number of times interest is compounded in years");
-		double n = kb.nextDouble();
+		double numbertime = kb.nextDouble();
 		kb.nextLine();
 		
 		System.out.println("Please enter the life of the loan in years");
-		double t = kb.nextDouble();
+		double lifeyr = kb.nextDouble();
 		kb.nextLine();
 		
-		double monthly = interest.total(n,p,r,t);
-		interest.format("Interest rate ", r);
-		interest.format("Principal $",p);
-		interest.format("number of times loan is compounded per year ", n);
-		interest.format("life of the loan in years ", t);
-		interest.format("Your total monthly payment is $", monthly);
+		double payment = interest.total(numbertime, principal, rate , lifeyr);
+		interest.print("Your total monthly payment is $", payment);
 	}
 	
-	public double total(double n, double p, double r, double t) 
+	public double total(double numbertime, double principal, double rate, double lifeyr) 
 	{
-		double a = Math.pow((p*(r/n)+1),(n*t));
-		return(a/12/t);
+		double thing = Math.pow((principal*(rate/numbertime)+1),(numbertime*lifeyr));
+		return(thing/12/lifeyr);
 	}
 	
-	public void format(String string, double number)
+	public void print(String string, double number)
 	{
 		System.out.printf("\n  %50s%5.2f", string, number);
 	}

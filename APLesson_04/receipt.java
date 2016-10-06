@@ -6,48 +6,53 @@ public class receipt
 		Scanner kb = new Scanner(System.in);
 		receipt form = new receipt();
 		
-		System.out.println("Please enter item 1");
-		String s = kb.nextLine();
+		System.out.println("Enter item 1");
+		String item1 = kb.nextLine();
 		
-		System.out.println("Please enter the price");
-		Double d = kb.nextDouble();
+		System.out.println("Enter the price");
+		Double price1 = kb.nextDouble();
+		
 		kb.nextLine();
 		
-		System.out.println("Please enter item 2");
-		String s1 = kb.nextLine();
+		System.out.println("Enter item 2");
+		String item2 = kb.nextLine();
 		
-		System.out.println("Please enter the price");
-		Double d1 = kb.nextDouble();
+		System.out.println("Enter the price");
+		Double price2 = kb.nextDouble();
+		
 		kb.nextLine();
 		
-		System.out.println("Please enter item 3");
-		String s2 = kb.nextLine();
+		System.out.println("Enter item 3");
+		String item3 = kb.nextLine();
 		
-		System.out.println("Please enter the price");
-		Double d2 = kb.nextDouble();
+		System.out.println("Enter the price");
+		Double price3 = kb.nextDouble();
+		
 		kb.nextLine();
 		
-		String s3 = "<<<<<<<<<<<<<<<__Receipt__>>>>>>>>>>>>>>>>";
-		System.out.printf("\n%41s", s3);
-		String s6 = "Subtotal";
-		Double d6 = d + d1 + d2;
-		String s7 = "Tax";
-		Double d7 = (d + d1 + d2 + d6)*0.08;
-		String s8 = "Total";
-		Double d8 = d + d1 + d2 + d6 + d7;
-		form.format(s,d);
-		form.format(s1,d1);
-		form.format(s2,d2);
-		form.format(s6,d6);
-		form.format(s7,d7);
-		form.format(s8,d8);
-		String s4 = "___________________________________________________";
-		System.out.printf("\n%41s", s4);
-		String s5 = " * Thank you for your support *";
-		System.out.printf("\n%41s", s5);
+		String header = "<<<<<<<<<<<<<<<__Receipt__>>>>>>>>>>>>>>>>";
+		System.out.printf("\n%41s", header);
+		String subtotal = "Subtotal";
+		Double subtotalnum = price1 + price2 + price3;
+		String tax = "Tax";
+		Double taxnum = (subtotalnum)*0.08;
+		String total = "Total";
+		Double totalnum = subtotalnum + taxnum;
+		
+		form.change(item1,price1);
+		form.change(item2,price2);
+		form.change(item3,price3);
+		form.change(subtotal,subtotalnum);
+		form.change(tax,taxnum);
+		form.change(total,totalnum);
+
+		String bottom = "___________________________________________________";
+		System.out.printf("\n%41s", bottom);
+		String thanks = " * Thank you for your support *";
+		System.out.printf("\n%41s", thanks);
 	}
-	public void format(String stuff, double num)
+	public void change(String string, double number)
 	{
-		System.out.printf("\n * %15s .......  %4.2f", stuff, num);
+		System.out.printf("\n * %15s .......  %4.2f", string, number);
 	}
 }

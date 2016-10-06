@@ -7,24 +7,20 @@ public class boxen
 		Scanner kb = new Scanner(System.in);
 		boxen vol = new boxen();
 		
-		System.out.println("please enter the height in inches");
+		System.out.println("Enter the height in inches");
 		double height = kb.nextDouble();
 		kb.nextLine();
 		
-		System.out.println("please enter the width in inches");
+		System.out.println("Enter the width in inches");
 		double width = kb.nextDouble();
 		kb.nextLine();
 		
-		System.out.println("please enter the length in inches");
+		System.out.println("Enter the length in inches");
 		double length = kb.nextDouble();
 		kb.nextLine();
 		
 		double volume = vol.volume(height, width, length);
-		
-		vol.format("Height in inches: ", height);
-		vol.format("Width in inches: ", width);
-		vol.format("Length in inches: ", length);
-		vol.format("Volume in cubic feet: ", volume);
+		vol.print("Volume = ", volume);
 		
 	}
 	
@@ -34,7 +30,7 @@ public class boxen
 		return(volume);
 	}
 	
-	public void format(String string, double number)
+	public void print(String string, double number)
 	{
 		System.out.printf("\n  %25s%2.5f", string, number);
 	}
