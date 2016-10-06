@@ -1,7 +1,8 @@
 import java.util.Scanner;
 public class cube
 {
-	static double side, sa;
+	static double side;
+	static double sa;
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);

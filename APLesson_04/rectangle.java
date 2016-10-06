@@ -1,7 +1,8 @@
 import java.util.Scanner;
 public class rectangle
 {
-	static double length, width;
+	static double length;
+	static double width;
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);

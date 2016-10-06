@@ -1,7 +1,9 @@
 import java.util.Scanner;
 public class average
 {
-	static double num1, num2, num3;
+	static double num1;
+	static double num2;
+	static double num3;
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
