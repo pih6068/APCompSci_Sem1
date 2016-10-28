@@ -28,8 +28,8 @@ public class compoundinterest
 	
 	public double total(double numbertime, double principal, double rate, double lifeyr) 
 	{
-		double thing = Math.pow((principal*(rate/numbertime)+1),(numbertime*lifeyr));
-		return(thing/12/lifeyr);
+		double thing = Math.pow(((rate/numbertime)+1),(numbertime*lifeyr)) *principal;
+		return((thing/12)/lifeyr);
 	}
 	
 	public void print(String string, double number)
