@@ -7,7 +7,7 @@ public class left
 		System.out.println("What is your word?");
 		String word = kb.nextLine();
 		
-		for(int i = 0; i >= word.length(); i++)
+		for(int i = 0; i <= word.length(); i++)
 		{
 			System.out.println(word.substring(i, word.length()));
 		}
