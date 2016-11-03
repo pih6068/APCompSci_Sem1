@@ -15,7 +15,7 @@ public class digitAdder
 	}
 	public static void sumDigits()
 	{
-		while(num < 0)
+		while(num > 0)
 		{
 			sum += num % 10;
 			num /= 10;
