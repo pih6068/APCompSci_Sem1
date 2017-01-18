@@ -17,8 +17,7 @@ public class treeDeg60
 	{
 		if(start <= stop)
 		{
-			System.out.println();
-			System.out.printf("%10s", word.substring(0, start));
+			System.out.printf("%10s\n", word.substring(0, start));
 			start += 1;
 			tree(word, start, stop);
 		}
