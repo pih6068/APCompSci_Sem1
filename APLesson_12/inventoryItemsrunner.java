@@ -11,13 +11,13 @@ public class inventoryItemsrunner
 		if(kb.nextLine().equals("n"))
 		{
 			System.out.println("Enter item's manufacturer and name (in that precise order)");
-			inventoryItems item1 = new items(kb.nextLine(), kb.nextLine());
+			inventoryItems item1 = new inventoryItems(kb.nextLine(), kb.nextLine());
 			System.out.println(item1);
 		}
 		else
 		{
 			System.out.println("Enter item's manufacturer, name, category, and price (in that precise order)");
-			inventoryItems item1 = new items(kb.nextLine(), kb.nextLine(), kb.nextLine(), kb.nextLine());
+			inventoryItems item1 = new inventoryItems(kb.nextLine(), kb.nextLine(), kb.nextLine(), kb.nextLine());
 			System.out.println(item1);			
 		}	
 	}
