@@ -21,9 +21,9 @@ public class gamegun
 		{
 			System.out.println("Action");
 			String action = kb.next();
-			if(action.equals("r"))
+			if(action.equals("R"))
 				reload();
-			else if(action.equals("s"))
+			else if(action.equals("S"))
 				System.out.println(shoot());
 			
 			printClip();
