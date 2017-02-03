@@ -5,6 +5,7 @@ public class distancer
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
+		System.out.println("Enter locations");
 		
 		distance object = new distance(kb.nextInt(),kb.nextInt(),kb.nextInt(),kb.nextInt());
 		

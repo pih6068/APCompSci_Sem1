@@ -6,6 +6,7 @@ public class humanrunner
 	public static void main(String[]args)
 	{
 	Scanner kb = new Scanner(System.in);
+	System.out.println("Enter your hair, eye and skin colors");
 	
 	human object = new human(kb.nextLine(), kb.nextLine(), kb.nextLine());
 	

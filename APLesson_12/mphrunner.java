@@ -5,6 +5,7 @@ public class mphrunner
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
+		System.out.println("Enter distance, hours, and minutes");
 		
 		mph object = new mph(kb.nextInt(),kb.nextInt(),kb.nextInt());
 		

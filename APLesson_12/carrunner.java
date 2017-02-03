@@ -5,6 +5,8 @@ public class carrunner
 	{
 		Scanner kb = new Scanner(System.in);
 		
+		System.out.println("What options do you want? (Paint, interior, engine, tires.");
+		
 		car object = new car(kb.nextLine(), kb.nextLine(), kb.nextLine(), kb.nextLine());
 		
 		System.out.println("Your vehicle is ready......");
