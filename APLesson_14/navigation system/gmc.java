@@ -11,7 +11,7 @@ public class gmc implements location
 	{
 		return (int)(Math.random() * (1000000-100000)+1) + 100000;
 	}
-	public void move(double x1,double y2)
+	public void move(double x1,double y1)
 	{
 		x += x1;
 		y += y1;
